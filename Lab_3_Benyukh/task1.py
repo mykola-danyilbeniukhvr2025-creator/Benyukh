@@ -1,6 +1,12 @@
 B = [ -4, 0, 3, -4, -1, -2, 1, 5, 7]
 
-pos = [i for i, v in enumerate(B) if v > 0]
+pos = []
+
+for i in range(len(B)):
+    if B[i] > 0:
+        pos.append(i)
+
+print(pos)
 
 if len(pos) >= 2:
     p = 1
